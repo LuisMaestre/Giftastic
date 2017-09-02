@@ -3,7 +3,7 @@ $(function() {
   console.log("Page loaded");
 })
 
-var searchArray =["Dog","Cat","Bird"];
+var searchArray= ["Dog","Cat","Bird"];
 
  function populateButtons(searchArray,classToAdd,areaToAddTo){
  	$(areaToAddTo).empty();
