@@ -1,5 +1,5 @@
 $(function() {
-	populateButtons(searchArray,"searchButton","buttonsArea");
+	populateButtons(searchArray,"searchButton","#ButtonsArea");
   console.log("Page loaded");
 })
 
@@ -15,3 +15,8 @@ var searchArray= ["Dog","Cat","Bird"];
  		$(areaToAddTo).append(a);
  	}
  }
+ $(document).on('click',".searchButton",function(){
+ 	var type = $(this).data("type");
+ 	console.log(type); 
+
+ })
